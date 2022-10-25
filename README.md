@@ -1,6 +1,6 @@
 # Royce Data Handbook
 
- This is a collection of guides, tutorials, and bits of information for the Royce Institute Data Infrastructure Project
+ This is a collection of guides, tutorials, and bits of information for the Royce Institute Data Infrastructure Project, we have written an extensive tutorial on how you can contribute which can be found [here].
 
 ## Usage
 
@@ -14,7 +14,7 @@ If you'd like to develop and/or build the Royce Data Handbook book, you should:
 4. Run `jupyter-book clean royce_data_handbook/` to remove any existing builds
 5. Run `jupyter-book build royce_data_handbook/`
 
-A fully-rendered HTML version of the book will be built in `royce_data_handbook/_build/html/`.
+A fully-rendered HTML version of the book will be built in `handbook/_build/html/`.
 
 ### Hosting the book
 
