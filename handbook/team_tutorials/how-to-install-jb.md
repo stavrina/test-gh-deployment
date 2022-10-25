@@ -17,6 +17,10 @@ We have tested downloading on Google Chrome, Microsoft Edge and Firefox Internet
 ## Install Anaconda
 Locate the Anaconda installation file, this should be a `.exe` file if you are on Windows. Usually, it should be stored, by default settings in your internet browser, in the Downloads folder.
 
+Steps: 
+    1. Run the installer
+    2. 
+
 
 
 
