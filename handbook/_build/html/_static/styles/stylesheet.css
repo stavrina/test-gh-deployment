@@ -1,0 +1,171 @@
+/* IMPORT SPHINX */
+@import 'theme.css';
+@import 'pydata-sphinx-theme.css';
+@import 'sphinx-book-theme.css';
+@import '../basic.css';
+
+/* Specify fonts to load from the web */
+/* latin-ext */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* CSS Royce Branding reference */
+/* 
+Royce Grey
+rgb(112,112,113)
+Primary
+rgb(0,161,154)
+#00A79D
+Accent 
+rgb(255,209,0)
+#FFD100
+*/
+
+/* Specify custom CSS rules */
+
+p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* CUSTOM CSS RULES FOR OVERRIDING SPHINX */
+
+#site-navigation {
+    background-color: rgb(0,161,154);
+    /* background-color: #00A79D; */
+}
+
+#site-navigation h1.site-logo {
+    color: #ffffff;
+    margin: .5em .325em 0;
+    text-align: left;
+}
+
+nav.bd-links p.caption {
+    color: rgb(112,112,113);
+}
+
+#site-navigation nav ul.nav li a:hover {
+    color: rgb(255,209,0)
+}
+
+#site-navigation nav ul.nav li.active>a {
+    color: rgb(255,209,0)
+}
+
+#site-navigation div.navbar_extra_footer {
+    color: #ffffff
+}
+
+#site-navigation div.navbar_extra_footer a {
+    color: rgb(255,209,0)
+}
+
+#site-navigation nav ul.nav li a, #site-navigation nav ul.nav ul li a {
+    color: #ffffff
+}
+
+/* RULE FOR NOT PRINTING Table of Contents */
+
+/* @media print {
+    .bd-toc {
+        visibility: hidden;
+    }
+} */
+
+
+/* div.content-container div.row {
+    background-color: #eaefbd;
+} */
+
+
+
+#main-content a,
+nav#bd-toc-nav,
+nav#bd-toc-nav a,
+div.prev-next-info,
+.fas.fa-list,
+.tocsection.onthispage.pt-5.pb-3 {
+    color: rgb(0,161,154) !important;
+    text-decoration: none;
+}
+/* 
+#main-content a:hover, 
+nav#bd-toc-nav a:hover, 
+div.prev-next-area a:hover, 
+div.prev-next-info:hover,
+div.prev-next-info:hover p.prev-next-title:hover,
+div.prev-next-info:hover, p.prev-next-subtitle:hover {
+    color: rgb(255,209,0) !important;
+    text-decoration: none !important;
+} */
+
+
+#main-content a:hover, 
+nav#bd-toc-nav a:hover, 
+.left-prev:hover,
+.right-next:hover {
+    color: rgb(255,209,0) !important;
+    text-decoration: none !important;
+}
+
+/* nav#bd-toc-nav a:visited {
+    color: #5e3652 !important;
+    text-decoration: none;
+} */
+
+.bd-toc nav li.active>a.active {
+    color: rgb(255,209,0) !important;
+    border-left: 2px solid rgb(255,209,0) !important;
+}
+
+/* #main-content a:visited {
+    color: rgb(112,112,113) !important
+} */
+
+/* div.col, .content-container {
+    background-color: #FFFDDE !important;
+    background-color: #FEFBF3 !important;
+    background-color: #F3ECB8 !important;
+    background-color: #f0f4bb !important;
+} */
+
+.bd-sidebar label:hover {
+    background-color: rgb(0,161,154);
+}

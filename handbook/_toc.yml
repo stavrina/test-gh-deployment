@@ -1,0 +1,29 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: welcome
+parts:
+- caption: Research Data Management
+  chapters:
+  - file: rdm/rdm-intro
+  - file: rdm/dir-tree
+  - file: rdm/git
+    sections:
+    - file: rdm/git-how-to-install-windows
+      title: Git Bash on Windows
+- caption: Team Tutorials
+  chapters:
+  - file: team_tutorials/work-on-this-book
+    sections:
+    - file: team_tutorials/notes-on-jb
+    - file: team_tutorials/how-to-install-jb
+- caption: Events
+  chapters:
+  - file: team_files/event_timeline
+- caption: Bibliography and Useful Links
+  chapters:
+  - file: bib-util/bibliography.md
+  - file: bib-util/useful-interesting.md
+
+

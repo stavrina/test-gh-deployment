@@ -1,0 +1,63 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Data Management Handbook
+author: Data Curators @ Royce
+logo: logo_royce_banner.png
+
+# Substitutions
+parse:
+  myst_title_to_header: True
+  myst_substitutions:
+    jupyter_book: '[Jupyter Book](https://jupyterbook.org)'
+    executable_books: '[The Executable Books Project](https://executablebooks.org/)'
+    royce_institute: '[Royce Institute](https://royce.ac.uk)'
+    data_curators: '[Data Curation Team](https://royce.ac.uk/data-curation)'
+  myst_enable_extensions:
+    - substitution
+    - colon_fence
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - bib-util/references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  home_page_in_navbar: false
+  use_issues_button: true
+  use_repository_button: true
+  favicon: images/favicon.ico
+  # extra_footer: 
+
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+    # bibtex_bibfiles: references.bib
+    html_style: styles/stylesheet.css
+    html_js_files:
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+    - https://www.gstatic.com/charts/loader.js
+    # - https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js
+    # html_css_files:
+    # - styles/stylesheet.css
+    # - https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css
+
+extra_javascript:
+  gantt.js
