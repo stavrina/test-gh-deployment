@@ -1,0 +1,32 @@
+name: pr-test-build
+run-name: Pull request by @${{ github.actor }} 
+on:
+  pull_request:
+    types: [opened, edited, reopened]
+jobs:
+  test-build:
+    runs-on:  ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Python # Set Python version
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          pip install requirements.txt
+      
+      # Build Jupyter Book
+      - name: Build
+        run: |
+          jupyter-book build handbook
+        id: build_book
+      
+      # Display output
+      - name: Check
+        run: |
+          echo {{ steps.build_book }}
