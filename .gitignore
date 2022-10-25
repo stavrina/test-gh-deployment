@@ -2,4 +2,5 @@ royce-data-handbook.code-workspace
 handbook/test_note.ipynb
 handbook/logo_F_HRI_LOGO_GRY.png
 handbook/team_files/
-_build/html/test_note.html
+handbook/_build/html/test_note.html
+handbook/_build/jupyter_execute/*
