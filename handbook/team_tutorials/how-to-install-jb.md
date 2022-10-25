@@ -3,7 +3,7 @@ At the time of writing this, the Jupyter Book package has been tested with [Pyth
 We will use Anaconda as our package manager to specify which version of Python we want to run on.
 
 ## Download Anaconda
-To download Anaconda, please visit the Anaconda [product page](https://www.anaconda.com/products/distribution),there you will find the appropriate distribution for your system. Usually, the download prompt shown below should have recognised your system, if not navigate to the [bottom of the page](https://www.anaconda.com/products/distribution#Downloads) or to the [Anaconda archive](https://repo.anaconda.com/archive/) to find the appropriate distribution for your system.
+To download Anaconda, please visit the Anaconda [product page](https://www.anaconda.com/products/distribution), there you will find the appropriate distribution for your system. Usually, the download prompt shown below should have recognised your system, if not navigate to the [bottom of the page](https://www.anaconda.com/products/distribution#Downloads) or to the [Anaconda archive](https://repo.anaconda.com/archive/) to find the appropriate distribution for your system.
 
 :::{attention}
 We have tested downloading on Google Chrome, Microsoft Edge and Firefox Internet Browsers. On Chrome and Edge, it might appear as if the download did not start. However, if you navigate to settings and downloads you will find the download progressing[^safari]. 
