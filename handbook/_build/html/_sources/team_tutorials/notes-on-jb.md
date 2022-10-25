@@ -9,7 +9,7 @@ We assume that you are working on a managed Windows machine. Currently, the most
 
 You will find the necesary packages to for your build environment below:
 
-* <a href="../required_packages/env.yml" download>Anaconda</a>
+* <a href="../required_packages/env.yaml" download>Anaconda</a>
 * <a href="../required_packages/requirements.txt" download>pip</a>
 
 
