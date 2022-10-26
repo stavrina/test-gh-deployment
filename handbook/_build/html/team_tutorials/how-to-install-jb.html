@@ -21,13 +21,16 @@
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/stylesheet.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
@@ -45,6 +48,7 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -300,6 +304,23 @@ title="Open an issue"
 
       </li>
       
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/edit/master/docs/team_tutorials/how-to-install-jb.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
     </ul>
   </div>
 </div>
@@ -426,16 +447,20 @@ title="Print to PDF"
 We will use Anaconda as our package manager to specify which version of Python we want to run on.</p>
 <section id="download-anaconda">
 <h2>Download Anaconda<a class="headerlink" href="#download-anaconda" title="Permalink to this headline">#</a></h2>
-<p>To download Anaconda, please visit the Anaconda <a class="reference external" href="https://www.anaconda.com/products/distribution">product page</a>,there you will find the appropriate distribution for your system. Usually, the download prompt shown below should have recognised your system, if not navigate to the <a class="reference external" href="https://www.anaconda.com/products/distribution#Downloads">bottom of the page</a> or to the <a class="reference external" href="https://repo.anaconda.com/archive/">Anaconda archive</a> to find the appropriate distribution for your system.</p>
+<p>To download Anaconda, please visit the Anaconda <a class="reference external" href="https://www.anaconda.com/products/distribution">product page</a>, there you will find the appropriate distribution for your system. Usually, the download prompt shown below should have recognised your system, if not navigate to the <a class="reference external" href="https://www.anaconda.com/products/distribution#Downloads">bottom of the page</a> or to the <a class="reference external" href="https://repo.anaconda.com/archive/">Anaconda archive</a> to find the appropriate distribution for your system.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>We have tested downloading on Google Chrome, Microsoft Edge and Firefox Internet Browsers. On Chrome and Edge, it might appear as if the download did not start. However, if you navigate to settings and downloads you will find the download progressing<a class="footnote-reference brackets" href="#safari" id="id2">2</a>.</p>
+<p>We have tested downloading on Google Chrome, Microsoft Edge and Firefox Internet Browsers. On Chrome and Edge, it might appear as if the download did not start. However, if you navigate to menu (<i class="bi bi-three-dots-vertical"></i>) → downloads you will find the download progressing<a class="footnote-reference brackets" href="#safari" id="id2">2</a>.</p>
 </div>
-<img alt="../_images/anaconda-webpage-download.jpg" class="center" id="img-anaconda-download" src="../_images/anaconda-webpage-download.jpg" />
 </section>
 <section id="install-anaconda">
 <h2>Install Anaconda<a class="headerlink" href="#install-anaconda" title="Permalink to this headline">#</a></h2>
 <p>Locate the Anaconda installation file, this should be a <code class="docutils literal notranslate"><span class="pre">.exe</span></code> file if you are on Windows. Usually, it should be stored, by default settings in your internet browser, in the Downloads folder.</p>
+<p>Steps:</p>
+<ol class="simple">
+<li><p>Run the installer</p></li>
+<li></li>
+</ol>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="note-on-lsw"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
@@ -499,6 +524,7 @@ We will use Anaconda as our package manager to specify which version of Python w
     By Data Curators @ Royce<br/>
   
       &copy; Copyright 2022.<br/>
+    Last updated on 26 Oct 2022.<br/>
 </p>
         </footer>
     </div>

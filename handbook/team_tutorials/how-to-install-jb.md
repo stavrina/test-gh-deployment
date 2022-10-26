@@ -6,16 +6,24 @@ We will use Anaconda as our package manager to specify which version of Python w
 To download Anaconda, please visit the Anaconda [product page](https://www.anaconda.com/products/distribution), there you will find the appropriate distribution for your system. Usually, the download prompt shown below should have recognised your system, if not navigate to the [bottom of the page](https://www.anaconda.com/products/distribution#Downloads) or to the [Anaconda archive](https://repo.anaconda.com/archive/) to find the appropriate distribution for your system.
 
 :::{attention}
-We have tested downloading on Google Chrome, Microsoft Edge and Firefox Internet Browsers. On Chrome and Edge, it might appear as if the download did not start. However, if you navigate to settings and downloads you will find the download progressing[^safari]. 
+We have tested downloading on Google Chrome, Microsoft Edge and Firefox Internet Browsers. On Chrome and Edge, it might appear as if the download did not start. However, if you navigate to menu (<i class="bi bi-three-dots-vertical"></i>) &rarr; downloads you will find the download progressing[^safari]. 
 :::
 
 (img-anaconda-download)=
-```{image} ../images/how-to-install-jb/anaconda-webpage-download.jpg
-:class: center
+```{figure} ../images/how-to-install-jb/anaconda-webpage-download.jpg
+---
+:figclass: center
+---
+The Anaconda download display
 ```
+
 
 ## Install Anaconda
 Locate the Anaconda installation file, this should be a `.exe` file if you are on Windows. Usually, it should be stored, by default settings in your internet browser, in the Downloads folder.
+
+Steps:
+1. Run the installer
+2.  
 
 
 
