@@ -12,7 +12,7 @@ We have tested downloading on Google Chrome, Microsoft Edge and Firefox Internet
 (img-anaconda-download)=
 ```{figure} ../images/how-to-install-jb/anaconda-webpage-download.jpg
 ---
-:figclass: center
+figclass: center
 ---
 The Anaconda download display
 ```
@@ -23,7 +23,7 @@ Locate the Anaconda installation file, this should be a `.exe` file if you are o
 
 Steps:
 1. Run the installer
-2.  
+2.  Select user installation
 
 
 
