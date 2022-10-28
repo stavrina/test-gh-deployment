@@ -26,7 +26,7 @@ Steps:
 2. Select `Next`
 3. Select `I Agree` in the License Agreement
 4. Select `Just Me` when prompted
-5. It is recommended that you install Anaconda on your local (usually `C`) drive
+5. It is recommended that you install Anaconda on your local, i.e. not connected to any network, drive, this is usually the `C:` drive for most University of Manchestert managed machines
 :::{warning}
 If you are using a machine provided by the University of Manchester do not install Anaconda on your `P:` drive or OneDrive
 :::
