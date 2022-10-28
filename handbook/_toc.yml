@@ -20,7 +20,7 @@ parts:
     - file: team_tutorials/how-to-install-jb
 - caption: Events
   chapters:
-  - file: team_files/event_timeline
+  - file: misc_org/events
 - caption: Bibliography and Useful Links
   chapters:
   - file: bib-util/bibliography.md

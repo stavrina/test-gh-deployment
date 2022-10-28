@@ -23,7 +23,13 @@ Locate the Anaconda installation file, this should be a `.exe` file if you are o
 
 Steps:
 1. Run the installer
-2.  Select user installation
+2. Select `Next`
+3. Select `I Agree` in the License Agreement
+4. Select `Just Me` when prompted
+5. It is recommended that you install Anaconda on your local (usually `C`) drive
+:::{warning}
+If you are using a machine provided by the University of Manchester do not install Anaconda on your `P:` drive or OneDrive
+:::
 
 
 
