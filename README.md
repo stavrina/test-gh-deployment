@@ -15,7 +15,8 @@ If you'd like to develop and/or build the Royce Data Handbook book, you should:
 4. (Optional) Run `jupyter-book clean handbook/` to remove any existing builds (Not recommended unless you are prepared to transfer files from `handbook` to `handbook/_build` in the hierarchical structure of this repository)
 5. Run `jupyter-book build handbook/`
 
-A fully-rendered HTML version of the book will be built in `handbook/_build/html/`.
+A fully-rendered HTML version of the book will be built in `handbook/_build/html/`.  
+You can view the fully rendered HTML version locally by opening `index.html` located in `handbook/_build/html/` in your web browser.
 
 ### Hosting the book
 
