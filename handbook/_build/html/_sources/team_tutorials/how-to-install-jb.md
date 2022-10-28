@@ -63,7 +63,7 @@ Steps:
 To check that Anaconda is properly installed on Git Bash follow the steps outlined below:
 1. Open a Git Bash terminal
 2. Type in `conda` and press return (<i class="bi bi-arrow-return-left"></i>)
-3. If you get a menu like the one below then go to step [5](easy), if not follow on from step 4
+3. If you get a menu like the one below then go to step 5, if not follow on from step 4
    ```{image} ../images/how-to-install-jb/git-bash-conda-check.jpg
    ```
 4. There are two ways you can proceed with this:
@@ -80,7 +80,6 @@ To check that Anaconda is properly installed on Git Bash follow the steps outlin
             ```
             echo '. /c/Users/<username>/Anaconda3/etc/profile.d/conda.sh' >> .bashrc
             ```
-(easy)=
 5. Anaconda sometimes will initialise the (base) environment whenever you open a new Git Bash (or any terminal), to stop this type:
    ```
    conda config --set auto_activate_base false
