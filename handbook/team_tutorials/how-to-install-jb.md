@@ -98,6 +98,10 @@ If you are comfortable with your set up we do not recommend you change anything.
 Download the {{ jupyter_book }} environment by picture below, right-click and select `Save link as...`:
 - <a href="../required_packages/env.yaml" download>Anaconda Environment</a>
 
+```{image} ../images/install-packages/anaconda-env.gif
+:class: center
+```
+
 
 ## Clone the Repo and start contributing
 You can find a condensed version in the README accompanying the repository this handbook is hosted on
