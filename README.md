@@ -10,9 +10,10 @@ If you'd like to develop and/or build the Royce Data Handbook book, you should:
 
 1. Clone this repository
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
+   1. Or `conda env create --file env.yaml`
 3. (Optional) Edit the books source files located in the `handbook/` directory
-4. Run `jupyter-book clean royce_data_handbook/` to remove any existing builds
-5. Run `jupyter-book build royce_data_handbook/`
+4. (Optional) Run `jupyter-book clean handbook/` to remove any existing builds (Not recommended unless you are prepared to transfer files from `handbook` to `handbook/_build` in the hierarchical structure of this repository)
+5. Run `jupyter-book build handbook/`
 
 A fully-rendered HTML version of the book will be built in `handbook/_build/html/`.
 
