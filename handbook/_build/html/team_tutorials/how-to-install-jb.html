@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Get Anaconda &#8212; Data Management Handbook</title>
+    <title>Get started with Jupyter Book &#8212; Data Management Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -60,7 +60,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Blibliography" href="../bib-util/bibliography.html" />
+    <link rel="next" title="Events" href="../misc_org/events.html" />
     <link rel="prev" title="Contributing to this book" href="notes-on-jb.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -176,10 +176,22 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Get Anaconda
+     Get started with Jupyter Book
     </a>
    </li>
   </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Events
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../misc_org/events.html">
+   Events
+  </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -393,13 +405,50 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#download-anaconda">
-   Download Anaconda
+  <a class="reference internal nav-link" href="#install-git-bash">
+   Install Git Bash
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#install-anaconda">
-   Install Anaconda
+  <a class="reference internal nav-link" href="#get-anaconda">
+   Get Anaconda
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-anaconda">
+     Download Anaconda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#install-anaconda">
+     Install Anaconda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#edit-your-path-environment-variables">
+     Edit your PATH environment variables
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-on-git-bash">
+   Conda on Git Bash
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optional-pick-your-favourite-ide">
+   (Optional) Pick your favourite IDE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-the-jupyter-book-environment">
+   Install the Jupyter Book Environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clone-the-repo-and-start-contributing">
+   Clone the Repo and start contributing
   </a>
  </li>
 </ul>
@@ -411,7 +460,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Get Anaconda</h1>
+                <h1>Get started with Jupyter Book</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -422,13 +471,50 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#download-anaconda">
-   Download Anaconda
+  <a class="reference internal nav-link" href="#install-git-bash">
+   Install Git Bash
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#install-anaconda">
-   Install Anaconda
+  <a class="reference internal nav-link" href="#get-anaconda">
+   Get Anaconda
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-anaconda">
+     Download Anaconda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#install-anaconda">
+     Install Anaconda
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#edit-your-path-environment-variables">
+     Edit your PATH environment variables
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-on-git-bash">
+   Conda on Git Bash
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optional-pick-your-favourite-ide">
+   (Optional) Pick your favourite IDE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-the-jupyter-book-environment">
+   Install the Jupyter Book Environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clone-the-repo-and-start-contributing">
+   Clone the Repo and start contributing
   </a>
  </li>
 </ul>
@@ -441,39 +527,128 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="get-anaconda">
-<h1>Get Anaconda<a class="headerlink" href="#get-anaconda" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="get-started-with-jupyter-book">
+<h1>Get started with Jupyter Book<a class="headerlink" href="#get-started-with-jupyter-book" title="Permalink to this headline">#</a></h1>
+<p>This guide is supposed to provide start to end instructions on contributing to this web-based handbook on Windows 10 OS. Feel free to read this out of sequence and focus on the sections that are relevant to you.</p>
+<section id="install-git-bash">
+<h2>Install Git Bash<a class="headerlink" href="#install-git-bash" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="get-anaconda">
+<h2>Get Anaconda<a class="headerlink" href="#get-anaconda" title="Permalink to this headline">#</a></h2>
 <p>At the time of writing this, the Jupyter Book package has been tested with <a class="reference external" href="https://jupyterbook.org/en/stable/advanced/windows.html">Python 3.7 on Windows 10</a><a class="footnote-reference brackets" href="#note-on-lsw" id="id1">1</a>, with the latest Python version being 3.10.<br />
 We will use Anaconda as our package manager to specify which version of Python we want to run on.</p>
 <section id="download-anaconda">
-<h2>Download Anaconda<a class="headerlink" href="#download-anaconda" title="Permalink to this headline">#</a></h2>
+<h3>Download Anaconda<a class="headerlink" href="#download-anaconda" title="Permalink to this headline">#</a></h3>
 <p>To download Anaconda, please visit the Anaconda <a class="reference external" href="https://www.anaconda.com/products/distribution">product page</a>, there you will find the appropriate distribution for your system. Usually, the download prompt shown below should have recognised your system, if not navigate to the <a class="reference external" href="https://www.anaconda.com/products/distribution#Downloads">bottom of the page</a> or to the <a class="reference external" href="https://repo.anaconda.com/archive/">Anaconda archive</a> to find the appropriate distribution for your system.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>We have tested downloading on Google Chrome, Microsoft Edge and Firefox Internet Browsers. On Chrome and Edge, it might appear as if the download did not start. However, if you navigate to menu (<i class="bi bi-three-dots-vertical"></i>) → downloads you will find the download progressing<a class="footnote-reference brackets" href="#safari" id="id2">2</a>.</p>
 </div>
-<figure class="center align-default" id="id3">
-<span id="img-anaconda-download"></span><img alt="../_images/anaconda-webpage-download.jpg" src="../_images/anaconda-webpage-download.jpg" />
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The Anaconda download display</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<img alt="../_images/anaconda-webpage-download.jpg" class="center" id="img-anaconda-download" src="../_images/anaconda-webpage-download.jpg" />
+<p>The Anaconda download display</p>
 </section>
 <section id="install-anaconda">
-<h2>Install Anaconda<a class="headerlink" href="#install-anaconda" title="Permalink to this headline">#</a></h2>
+<h3>Install Anaconda<a class="headerlink" href="#install-anaconda" title="Permalink to this headline">#</a></h3>
 <p>Locate the Anaconda installation file, this should be a <code class="docutils literal notranslate"><span class="pre">.exe</span></code> file if you are on Windows. Usually, it should be stored, by default settings in your internet browser, in the Downloads folder.</p>
 <p>Steps:</p>
-<ol class="simple">
+<ol>
 <li><p>Run the installer</p></li>
 <li><p>Select <code class="docutils literal notranslate"><span class="pre">Next</span></code></p></li>
 <li><p>Select <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">Agree</span></code> in the License Agreement</p></li>
 <li><p>Select <code class="docutils literal notranslate"><span class="pre">Just</span> <span class="pre">Me</span></code> when prompted</p></li>
-<li><p>It is recommended that you install Anaconda on your local (usually <code class="docutils literal notranslate"><span class="pre">C</span></code>) drive</p></li>
-</ol>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Next</span></code> on the Choose Install Location step</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If you are using a machine provided by the University of Manchester do not install Anaconda on your <code class="docutils literal notranslate"><span class="pre">P:</span></code> drive or OneDrive</p>
+<p>Check that the Destination Folder is on your local drive, usuallly under <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;\Anaconda3</span></code>.<br />
+It is recommended that you install Anaconda on your local, i.e. not connected to any network, drive, this is usually the <code class="docutils literal notranslate"><span class="pre">C:</span></code> drive for most University of Manchestert managed machines.<br />
+If you are using a machine provided by the University of Manchester do not install Anaconda on your <code class="docutils literal notranslate"><span class="pre">P:</span></code> drive or OneDrive</p>
 </div>
+</li>
+<li><p>Do not add Anaconda to your PATH environment variables (we will do this later)</p></li>
+<li><p>Check <i class="bi bi-check2-square"></i> the box prompting you to register Anaconda3 as your default Python 3.9 (optional but recommended unless you’re planning to run multiple package managers)</p></li>
+<li><p>Wait for Anaconda to finish installing and you are done!</p></li>
+</ol>
+</section>
+<section id="edit-your-path-environment-variables">
+<h3>Edit your PATH environment variables<a class="headerlink" href="#edit-your-path-environment-variables" title="Permalink to this headline">#</a></h3>
+<ol>
+<li><p>Begin with your Windows start menu (<i class="bi bi-windows"></i>)</p></li>
+<li><p>Type in <code class="docutils literal notranslate"><span class="pre">env</span></code>, you should see <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">the</span> <span class="pre">system</span> <span class="pre">environment</span> <span class="pre">variables</span></code> appear as the top option</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">the</span> <span class="pre">system</span> <span class="pre">environment</span> <span class="pre">variables</span></code></p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">Properties</span></code> window should pop up, navigate to the <code class="docutils literal notranslate"><span class="pre">Advanced</span></code> tab, if you’re not already on it</p></li>
+<li><p>At the bottom click on <code class="docutils literal notranslate"><span class="pre">Environment</span> <span class="pre">Variables...</span></code></p>
+<img alt="../_images/env-var-edit.jpg" src="../_images/env-var-edit.jpg" />
+</li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Environment</span> <span class="pre">Variables</span></code> window should open up, under <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">variables</span></code> find <code class="docutils literal notranslate"><span class="pre">Path</span></code></p></li>
+<li><p>Highlight <code class="docutils literal notranslate"><span class="pre">Path</span></code> and click <code class="docutils literal notranslate"><span class="pre">Edit...</span></code>, the <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">environment</span> <span class="pre">variable</span></code> window should open</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">New</span></code> and type the path to your Anaconda3 installation directory, this is usually <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;\Anaconda3</span></code></p>
+<img alt="../_images/env-var-edit-path.jpg" src="../_images/env-var-edit-path.jpg" />
+</li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code> to confirm the changes across all windows and you should be set!</p></li>
+</ol>
+</section>
+</section>
+<section id="conda-on-git-bash">
+<h2>Conda on Git Bash<a class="headerlink" href="#conda-on-git-bash" title="Permalink to this headline">#</a></h2>
+<p>To check that Anaconda is properly installed on Git Bash follow the steps outlined below:</p>
+<ol>
+<li><p>Open a Git Bash terminal</p></li>
+<li><p>Type in <code class="docutils literal notranslate"><span class="pre">conda</span></code> and press return (<i class="bi bi-arrow-return-left"></i>)</p></li>
+<li><p>If you get a menu like the one below then go to step <a class="reference internal" href="#easy"><span class="std std-ref">5</span></a>, if not follow on from step 4</p>
+<img alt="../_images/git-bash-conda-check.jpg" src="../_images/git-bash-conda-check.jpg" />
+</li>
+<li><p>There are two ways you can proceed with this:</p>
+<ol>
+<li><p>First way:</p>
+<ol>
+<li><p>Open up <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> with your choice text editor (we will use notepad), this should be located in <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;</span></code></p></li>
+<li><p>If you can not locate you might need to turn on hidden file visibility:</p>
+<ol>
+<li><p>On the top ribbon pane of <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">Explorer</span></code> head to the <code class="docutils literal notranslate"><span class="pre">View</span></code> tab and check the box with <code class="docutils literal notranslate"><span class="pre">Hidden</span> <span class="pre">items</span></code> next to it</p>
+<img alt="../_images/hidden-file-visibility.jpg" src="../_images/hidden-file-visibility.jpg" />
+</li>
+</ol>
+</li>
+<li><p>In case the file does not exist open up notepad and save an empty file with the name <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> in your <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;</span></code> directory</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">/c/Users/&lt;username&gt;/Anaconda3/etc/profile.d/conda.sh</span></code> in your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file</p></li>
+</ol>
+</li>
+<li><p>The second way:</p>
+<ol>
+<li><p>Open up Git Bash and type, replacing <code class="docutils literal notranslate"><span class="pre">&lt;username&gt;</span></code> with yours:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="s1">&#39;. /c/Users/&lt;username&gt;/Anaconda3/etc/profile.d/conda.sh&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">.</span><span class="n">bashrc</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<ol id="easy">
+<li><p>Anaconda sometimes will initialise the (base) environment whenever you open a new Git Bash (or any terminal), to stop this type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="nb">set</span> <span class="n">auto_activate_base</span> <span class="n">false</span>
+</pre></div>
+</div>
+</li>
+<li><p>You are all set to go!</p></li>
+</ol>
+</section>
+<section id="optional-pick-your-favourite-ide">
+<h2>(Optional) Pick your favourite IDE<a class="headerlink" href="#optional-pick-your-favourite-ide" title="Permalink to this headline">#</a></h2>
+<p>Integrated Development Environments (IDE) can be a very personal thing. Over the years some of the people on our team have used several setups from <a class="reference external" href="https://www.jetbrains.com/pycharm/">PyCharm</a> to text editors such as <a class="reference external" href="https://www.sublimetext.com/">Sublime Text</a> or <a class="reference external" href="https://atom.io/">Atom</a> accompanied by a detached terminal window. For what we demonstrate here we will use <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>.
+If you are comfortable with your set up we do not recommend you change anything.</p>
+</section>
+<section id="install-the-jupyter-book-environment">
+<h2>Install the Jupyter Book Environment<a class="headerlink" href="#install-the-jupyter-book-environment" title="Permalink to this headline">#</a></h2>
+<p>Download the <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> environment by picture below, right-click and select <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">link</span> <span class="pre">as...</span></code>:</p>
+<ul class="simple">
+<li><p><a href="../required_packages/env.yaml" download>Anaconda Environment</a></p></li>
+</ul>
+</section>
+<section id="clone-the-repo-and-start-contributing">
+<h2>Clone the Repo and start contributing<a class="headerlink" href="#clone-the-repo-and-start-contributing" title="Permalink to this headline">#</a></h2>
+<p>You can find a condensed version in the README accompanying the repository this handbook is hosted on</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="note-on-lsw"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
@@ -520,10 +695,10 @@ We will use Anaconda as our package manager to specify which version of Python w
             <p class="prev-next-title">Contributing to this book</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../bib-util/bibliography.html" title="next page">
+    <a class='right-next' id="next-link" href="../misc_org/events.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Blibliography</p>
+        <p class="prev-next-title">Events</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
