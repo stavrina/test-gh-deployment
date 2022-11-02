@@ -445,6 +445,23 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#install-the-jupyter-book-environment">
    Install the Jupyter Book Environment
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-and-install-the-environment">
+     Download and install the environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-that-your-environment-works">
+     Check that your environment works
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#check-that-jupyter-book-works">
+   Check that Jupyter Book works
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#clone-the-repo-and-start-contributing">
@@ -510,6 +527,23 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#install-the-jupyter-book-environment">
    Install the Jupyter Book Environment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-and-install-the-environment">
+     Download and install the environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-that-your-environment-works">
+     Check that your environment works
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#check-that-jupyter-book-works">
+   Check that Jupyter Book works
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -584,7 +618,7 @@ If you are using a machine provided by the University of Manchester do not insta
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">New</span></code> and type the path to your Anaconda3 installation directory, this is usually <code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;username&gt;\Anaconda3</span></code></p>
 <img alt="../_images/env-var-edit-path.jpg" src="../_images/env-var-edit-path.jpg" />
 </li>
-<li><p>Click <code class="docutils literal notranslate"><span class="pre">Ok</span></code> to confirm the changes across all windows and you should be set!</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to confirm the changes across all windows and you should be set!</p></li>
 </ol>
 </section>
 </section>
@@ -639,15 +673,82 @@ If you are comfortable with your set up we do not recommend you change anything.
 </section>
 <section id="install-the-jupyter-book-environment">
 <h2>Install the Jupyter Book Environment<a class="headerlink" href="#install-the-jupyter-book-environment" title="Permalink to this headline">#</a></h2>
-<p>Download the <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> environment by picture below, right-click and select <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">link</span> <span class="pre">as...</span></code>:</p>
-<ul class="simple">
-<li><p><a href="../required_packages/env.yaml" download>Anaconda Environment</a></p></li>
-</ul>
-<img alt="../_images/anaconda-env.gif" class="center" src="../_images/anaconda-env.gif" />
+<section id="download-and-install-the-environment">
+<h3>Download and install the environment<a class="headerlink" href="#download-and-install-the-environment" title="Permalink to this headline">#</a></h3>
+<p id="env-download-loc">Download the <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> environment by picture below, right-click and select <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">link</span> <span class="pre">as...</span></code>:<br />
+<strong><a href="../required_packages/env.yaml" download>Anaconda Environment</a></strong></p>
+<ol>
+<li><p>Start up <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Navigator</span></code> (depending on your system this might take some time and open a few dialog boxes)</p></li>
+<li><p>On the left-hand pane navigate to <code class="docutils literal notranslate"><span class="pre">Environments</span></code> (you might have to wait a bit again)</p></li>
+<li><p>Next to the menu pane you will see the environments list, at the bottom you will see a menu with environment creating options, click <code class="docutils literal notranslate"><span class="pre">Import</span></code></p>
+<img alt="../_images/conda-navigator-env.jpg" src="../_images/conda-navigator-env.jpg" />
+<p>An <a class="reference external" href="#import-gif">animation</a> showing step 4-7 can be found below</p>
+</li>
+<li><p>Choose to <strong>Import from:</strong> your <code class="docutils literal notranslate"><span class="pre">Local</span> <span class="pre">drive</span></code></p></li>
+<li><p>Find the location where you saved the <a class="reference external" href="#env-download-loc">environment</a> you saved from this page</p></li>
+<li><p>(Optional) Specify a <strong>New environment name:</strong></p></li>
+<li><p>Click on <strong>Import</strong> and you are done, you just have to wait for all the packages to download</p></li>
+</ol>
+<img alt="../_images/anaconda-env.gif" class="center" id="import-gif" src="../_images/anaconda-env.gif" />
+</section>
+<section id="check-that-your-environment-works">
+<h3>Check that your environment works<a class="headerlink" href="#check-that-your-environment-works" title="Permalink to this headline">#</a></h3>
+<p>The steps outlined below will help you check if you have installed the environment correctly:</p>
+<ol>
+<li><p>Open up your <strong>Terminal</strong> application, we will use Git Bash to demonstrate</p></li>
+<li><p>Type the following into your terminal application replacing <code class="docutils literal notranslate"><span class="pre">your-env-name</span></code> with the name you have defined for your environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">your</span><span class="o">-</span><span class="n">env</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+</li>
+<li><p>If you see your defined environment name above the terminal location enclosed by parentheses then your environment specification has worked!</p></li>
+<li><p>(Bonus) Type the following to deactivate the environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">deactivate</span>
+</pre></div>
+</div>
+<img alt="../_images/term-conda-activate-deactivate.gif" src="../_images/term-conda-activate-deactivate.gif" />
+</li>
+</ol>
+</section>
+</section>
+<section id="check-that-jupyter-book-works">
+<h2>Check that Jupyter Book works<a class="headerlink" href="#check-that-jupyter-book-works" title="Permalink to this headline">#</a></h2>
+<p>You should have now have successfully installed all you need to get started with Jupyter Book, as outlined above. We will follow a simple exercise to test whether it runs on your machine.<br />
+Open up a terminal and activate your environment as outlines in steps 1 - 3 <a class="reference external" href="#check-that-your-environment-works">above</a>, and type in the code below, press return (<i class="bi bi-arrow-return-left"></i>) and the Jupyter Book help menu should show appear:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
+</pre></div>
+</div>
+<img alt="../_images/check-jb-install.gif" src="../_images/check-jb-install.gif" />
 </section>
 <section id="clone-the-repo-and-start-contributing">
 <h2>Clone the Repo and start contributing<a class="headerlink" href="#clone-the-repo-and-start-contributing" title="Permalink to this headline">#</a></h2>
-<p>You can find a condensed version in the README accompanying the repository this handbook is hosted on</p>
+<p>You can find a condensed version in the <span class="xref myst">README</span> accompanying the repository this handbook is hosted on.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The guide below assumes you have some familiarity with Git and branching. If not please follow one of the guides we recommend here.</p>
+</div>
+<p>Follow these steps to clone the repository to your local drive and push updates:</p>
+<ol>
+<li><p>Depending on if you have set up SSH-keys on your machine, or not, choose how you want to clone the repository on the page under the green <code class="docutils literal notranslate"><span class="pre">Code</span></code> button <span class="badge text-bg-success">Code <i class="bi bi-caret-down-fill"></i></span> and press the clone (<i class="fa-regular fa-clone"></i>) button to copy the line to your clipboard</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>The most straightforward way is via HTTPS</p>
+</div>
+</li>
+<li><p>Decided on a location (2 ways):</p>
+<ol class="simple">
+<li><p>Open up a terminal window and navigate to a directory you want to store this book in<br />
+<strong>OR</strong></p></li>
+<li><p>Navigate to the directory (in File Explorer) you want to store this book in, right-click, and select <code class="docutils literal notranslate"><span class="pre">Git</span> <span class="pre">Bash</span> <span class="pre">here</span></code></p></li>
+</ol>
+</li>
+<li><p>Type in, replacing <code class="docutils literal notranslate"><span class="pre">&lt;text-you-copied&gt;</span></code> with the actual text you copied:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="o">&lt;</span><span class="n">text</span><span class="o">-</span><span class="n">you</span><span class="o">-</span><span class="n">copied</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Create a new branch - this will be where you will work and push updates from</p></li>
+</ol>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="note-on-lsw"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
@@ -711,7 +812,7 @@ If you are comfortable with your set up we do not recommend you change anything.
     By Data Curators @ Royce<br/>
   
       &copy; Copyright 2022.<br/>
-    Last updated on 28 Oct 2022.<br/>
+    Last updated on 02 Nov 2022.<br/>
 </p>
         </footer>
     </div>
