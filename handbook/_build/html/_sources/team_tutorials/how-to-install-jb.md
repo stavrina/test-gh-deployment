@@ -88,7 +88,7 @@ To check that Anaconda is properly installed on Git Bash follow the steps outlin
 
 ## (Optional) Pick your favourite IDE
 
-Integrated Development Environments (IDE) can be a very personal thing. Over the years some of the people on our team have used several setups from [PyCharm](https://www.jetbrains.com/pycharm/) to text editors such as [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/) accompanied by a detached terminal window. For what we demonstrate here we will use [Visual Studio Code](https://code.visualstudio.com/).
+Integrated Development Environments (IDE) can be a very personal thing. Over the years some of the people on our team have used several setups from [PyCharm](https://www.jetbrains.com/pycharm/) to text editors such as [Sublime Text](https://www.sublimetext.com/) accompanied by a detached terminal window[^text-editors]. For what we demonstrate here we will use [Visual Studio Code](https://code.visualstudio.com/).
 If you are comfortable with your set up we do not recommend you change anything.
 
 
@@ -158,8 +158,7 @@ Follow these steps to clone the repository to your local drive and push updates:
    ```
    git clone <text-you-copied>
    ```
-4. 
-
+4. Create a new branch - this will be where you will work and push updates from
 
 
 
@@ -167,3 +166,4 @@ Follow these steps to clone the repository to your local drive and push updates:
 
 [^note-on-lsw]: Of course you can bypass most of this guide and use the Linux Subsystem on Windows and if you prefer `pip` as your package and virtual environment manager.
 [^safari]: We are not able to test this on the Safari web browser, currently. If you are able to help feel free to contribute to this guide.
+[^text-editors]: If you want to play around with different text editors, GitHub maintains a list of free open-source text editors [here](https://github.com/collections/text-editors), and you can find some more information on Wikipedia [here](https://en.wikipedia.org/wiki/List_of_text_editors).
