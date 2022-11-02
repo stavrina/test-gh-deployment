@@ -56,7 +56,7 @@ Steps:
 8. Click `New` and type the path to your Anaconda3 installation directory, this is usually `C:\Users\<username>\Anaconda3`
    ```{image} ../images/how-to-install-jb/env-var-edit-path.jpg
    ```
-9.  Click `Ok` to confirm the changes across all windows and you should be set!
+9.  Click `OK` to confirm the changes across all windows and you should be set!
 
 ## Conda on Git Bash
 
@@ -94,16 +94,71 @@ If you are comfortable with your set up we do not recommend you change anything.
 
 ## Install the Jupyter Book Environment
 
-Download the {{ jupyter_book }} environment by picture below, right-click and select `Save link as...`:
-- <a href="../required_packages/env.yaml" download>Anaconda Environment</a>
+### Download and install the environment
+(env-download-loc)=
+Download the {{ jupyter_book }} environment by picture below, right-click and select `Save link as...`:  
+**<a href="../required_packages/env.yaml" download>Anaconda Environment</a>**
 
+1. Start up `Anaconda Navigator` (depending on your system this might take some time and open a few dialog boxes)
+2. On the left-hand pane navigate to `Environments` (you might have to wait a bit again)
+3. Next to the menu pane you will see the environments list, at the bottom you will see a menu with environment creating options, click `Import`
+   :::{image} ../images/how-to-install-jb/conda-navigator-env.jpg
+   :::
+   An [animation](#import-gif) showing step 4-7 can be found below
+4. Choose to **Import from:** your `Local drive`
+5. Find the location where you saved the [environment](#env-download-loc) you saved from this page
+6. (Optional) Specify a **New environment name:**
+7. Click on **Import** and you are done, you just have to wait for all the packages to download
+(import-gif)=
 ```{image} ../images/install-packages/anaconda-env.gif
 :class: center
 ```
+### Check that your environment works
+The steps outlined below will help you check if you have installed the environment correctly:
+1. Open up your **Terminal** application, we will use Git Bash to demonstrate
+2. Type the following into your terminal application replacing `your-env-name` with the name you have defined for your environment:
+   ```
+   conda activate your-env-name
+   ```
+3. If you see your defined environment name above the terminal location enclosed by parentheses then your environment specification has worked!
+4. (Bonus) Type the following to deactivate the environment:
+   ```
+   conda deactivate
+   ```
+   :::{image} ../images/how-to-install-jb/term-conda-activate-deactivate.gif
+   :::
 
+## Check that Jupyter Book works
+
+You should have now have successfully installed all you need to get started with Jupyter Book, as outlined above. We will follow a simple exercise to test whether it runs on your machine.  
+Open up a terminal and activate your environment as outlines in steps 1 - 3 [above](#check-that-your-environment-works), and type in the code below, press return (<i class="bi bi-arrow-return-left"></i>) and the Jupyter Book help menu should show appear:
+```
+jupyter-book
+```
+:::{image} ../images/how-to-install-jb/check-jb-install.gif
+:::
 
 ## Clone the Repo and start contributing
-You can find a condensed version in the README accompanying the repository this handbook is hosted on
+You can find a condensed version in the [README]() accompanying the repository this handbook is hosted on.  
+
+:::{warning}
+The guide below assumes you have some familiarity with Git and branching. If not please follow one of the guides we recommend here.
+:::
+
+Follow these steps to clone the repository to your local drive and push updates:
+1. Depending on if you have set up SSH-keys on your machine, or not, choose how you want to clone the repository on the page under the green `Code` button <span class="badge text-bg-success">Code <i class="bi bi-caret-down-fill"></i></span> and press the clone (<i class="fa-regular fa-clone"></i>) button to copy the line to your clipboard
+   :::{hint}
+   The most straightforward way is via HTTPS
+   ::: 
+2. Decided on a location (2 ways):
+   1. Open up a terminal window and navigate to a directory you want to store this book in  
+      **OR**
+   2. Navigate to the directory (in File Explorer) you want to store this book in, right-click, and select `Git Bash here`
+3. Type in, replacing `<text-you-copied>` with the actual text you copied:
+   ```
+   git clone <text-you-copied>
+   ```
+4. 
 
 
 
